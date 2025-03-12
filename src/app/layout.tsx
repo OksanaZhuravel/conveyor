@@ -29,7 +29,7 @@ export default function RootLayout({
 			<body
 				className={`${inter.variable} ${montserrat.variable} m-auto h-screen`}
 			>
-				{/* <Header /> */}
+				<Header />
 				{children}
 				<Footer />
 			</body>
