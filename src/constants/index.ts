@@ -36,3 +36,10 @@ export const enum Paths {
 	TELEGRAM = 'https://t.me/74951183282',
 	TELEPHONE = 'tel:+74951183282',
 }
+
+export const enum IDs {
+	WORKS = 'how-it-works',
+	PRICING = 'pricing',
+	REVIEWS = 'reviews',
+	CONTACT = 'contact',
+}

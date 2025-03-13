@@ -1,4 +1,5 @@
 import { MainTabs } from '@/components/content-tabs/main-tabs'
+import { Pricing } from '@/components/pricing/pricing'
 import { Promo } from '@/components/promo/promo'
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
 			<main className='w-full h-full m-auto'>
 				<Promo />
 				<MainTabs />
+				<Pricing />
 			</main>
 		</div>
 	)
