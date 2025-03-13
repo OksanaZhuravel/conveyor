@@ -24,7 +24,7 @@ export const CardPrice = ({
 		title === 'Стандарт' ? '/starIconWhite.svg' : '/starIconBlack.svg'
 
 	return (
-		<div
+		<article
 			className={cn(
 				'p-10 w-1/3 h-full flex flex-col gap-7.5 rounded-30 min-h-[813px]',
 				cardClass
@@ -65,6 +65,6 @@ export const CardPrice = ({
 			<div className='mt-auto'>
 				<Button className='uppercase'>Купить</Button>
 			</div>
-		</div>
+		</article>
 	)
 }

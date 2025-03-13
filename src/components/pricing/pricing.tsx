@@ -1,6 +1,7 @@
 import { Title } from '@/components/ui/title'
 import { CardPrice } from './card-price'
 import { CardPriceList } from './card-price-list'
+import { Additionally } from './additionally'
 
 export const Pricing = () => {
 	return (
@@ -12,8 +13,8 @@ export const Pricing = () => {
 					сайта, без переплаты и абонентской платы
 				</p>
 			</div>
-
 			<CardPriceList />
+			<Additionally />
 		</section>
 	)
 }
