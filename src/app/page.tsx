@@ -1,3 +1,4 @@
+import { Client } from '@/components/client-page/client'
 import { MainTabs } from '@/components/content-tabs/main-tabs'
 import { Pricing } from '@/components/pricing/pricing'
 import { Promo } from '@/components/promo/promo'
@@ -9,6 +10,7 @@ export default function Home() {
 				<Promo />
 				<MainTabs />
 				<Pricing />
+				<Client />
 			</main>
 		</div>
 	)

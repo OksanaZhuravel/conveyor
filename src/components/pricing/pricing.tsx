@@ -1,6 +1,6 @@
+import { Additionally } from '@/components/pricing/additionally'
+import { CardPriceList } from '@/components/pricing/card-price-list'
 import { Title } from '@/components/ui/title'
-import { Additionally } from './additionally'
-import { CardPriceList } from './card-price-list'
 import { IDs } from '@/constants'
 
 export const Pricing = () => {
