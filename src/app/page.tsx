@@ -1,3 +1,4 @@
+import { Answer } from '@/components/answer/answer'
 import { Client } from '@/components/client-page/client'
 import { MainTabs } from '@/components/content-tabs/main-tabs'
 import { Pricing } from '@/components/pricing/pricing'
@@ -11,6 +12,8 @@ export default function Home() {
 				<MainTabs />
 				<Pricing />
 				<Client />
+
+				<Answer />
 			</main>
 		</div>
 	)
