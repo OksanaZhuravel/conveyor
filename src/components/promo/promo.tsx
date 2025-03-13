@@ -4,20 +4,17 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { Button } from '../ui/button'
 
-export const Promo = ({ id }: { id?: string }) => {
+export const Promo = () => {
 	const [isActive, setIsActive] = useState(false)
 
 	const handleClick = () => {
 		setIsActive(true)
 	}
 	return (
-		<section
-			id={id}
-			className='w-full bg-muted flex items-center justify-between gap-32 rounded-b-30 pl-[70px] pr-[130px] px-[60px]'
-		>
-			<div className='w-full h-full flex flex-col items-start gap-10 max-w-4xl '>
+		<section className='w-full bg-muted flex items-center justify-between gap-32 rounded-b-30 pl-[70px] pr-[130px] py-[60px]'>
+			<div className='w-full h-full flex flex-col items-start gap-10 max-w-[800px]'>
 				<h1 className='text-[80px] leading-none font-bold font-montserrat'>
-					<span className='text-[80px] font-bold font-montserrat text-accent '>
+					<span className='text-[80px] leading-none font-bold font-montserrat text-accent '>
 						Лидогенерация
 					</span>{' '}
 					для&nbsp;бизнеса
@@ -46,6 +43,20 @@ export const Promo = ({ id }: { id?: string }) => {
 					alt='Девушка с ноутбуком'
 					width={791}
 					height={497}
+				/>
+				<Image
+					src='/starIcon.svg'
+					alt='Звезда'
+					width={60}
+					height={60}
+					className=' absolute top-26.5 -right-7.5'
+				/>
+				<Image
+					src='/starIcon.svg'
+					alt='Звезда'
+					width={60}
+					height={60}
+					className=' absolute  bottom-19.5 -left-7'
 				/>
 			</div>
 		</section>
