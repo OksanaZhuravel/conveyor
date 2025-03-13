@@ -4,9 +4,10 @@ import { Paths } from '@/constants'
 import { cn } from '@/lib/utils'
 import NavigationLink from './navigation-link'
 
-export interface ComponentProps extends React.HTMLAttributes<HTMLElement> {}
-
-export const Navigation = ({ className }: ComponentProps) => {
+export const Navigation = ({
+	className,
+	...props
+}: React.HTMLAttributes<HTMLElement>) => {
 	const navItems = [
 		{
 			title: 'Главная',
@@ -15,7 +16,7 @@ export const Navigation = ({ className }: ComponentProps) => {
 	]
 
 	return (
-		<nav className={cn('flex gap-2 w-full ', className)}>
+		<nav className={cn('flex gap-2 w-full', className)} {...props}>
 			{navItems.map((item) => (
 				<NavigationLink key={item.url} href={item.url}>
 					{item.title}
