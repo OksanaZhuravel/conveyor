@@ -40,8 +40,8 @@ export const Header = () => {
 			</div>
 			{!isMobile && (
 				<>
-					<Navigation />
-					<Social />
+					<Navigation className='gap-[60px] flex-1 justify-center' />
+					<Social className='items-center' />
 				</>
 			)}
 			{isMobile && (
@@ -56,7 +56,8 @@ export const Header = () => {
 							<VisuallyHidden>Меню</VisuallyHidden>
 						</DialogTitle>
 
-						<Navigation className='flex-col h-full' />
+						<Navigation className='flex-col gap-3' />
+						<Social className='flex-col-reverse ' />
 					</SheetContent>
 				</Sheet>
 			)}
