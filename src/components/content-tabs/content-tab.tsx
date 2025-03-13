@@ -6,23 +6,12 @@ import {
 	CardTitle,
 } from '@/components/ui/card'
 
+import { StarIcon } from '@/components/ui/star-icon'
 import Image from 'next/image'
-import { StarIcon } from '../ui/star-icon'
 
-interface ContentTabProps {
-	title: string
-	titleAccent?: string
-}
-
-export const ContentTab = ({ title, titleAccent }: ContentTabProps) => {
+export const ContentTab = () => {
 	return (
-		<div className='flex flex-col items-center gap-10'>
-			<h2 className='text-5xl flex flex-col font-bold font-montserrat leading-13 items-center'>
-				{title}
-				<span className='text-5xl leading-13  font-bold font-montserrat text-accent'>
-					{titleAccent}
-				</span>
-			</h2>
+		<div className='flex pt-5 flex-col items-center gap-10'>
 			<div className='grid grid-cols-2 gap-5'>
 				<Card>
 					<CardHeader>

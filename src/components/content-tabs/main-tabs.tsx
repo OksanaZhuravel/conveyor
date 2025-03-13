@@ -1,5 +1,6 @@
 import { ContentTab } from '@/components/content-tabs/content-tab'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Title } from '../ui/title'
 
 export const MainTabs = () => {
 	return (
@@ -18,25 +19,31 @@ export const MainTabs = () => {
 					</TabsTrigger>
 				</TabsList>
 				<TabsContent value='b2b'>
-					<ContentTab
+					<Title
 						title='Завалим ваш отдел продаж'
 						titleAccent='целевыми Лидами'
 					/>
+					<ContentTab />
 				</TabsContent>
 				<TabsContent value='exchange'>
-					<ContentTab title='Качественные лиды' />
+					<Title title='Качественные лиды' />
+					<ContentTab />
 				</TabsContent>
 				<TabsContent value='service'>
-					<ContentTab title='Сервис по Лидгену' />
+					<Title title='Сервис по Лидгену' />
+					<ContentTab />
 				</TabsContent>
 				<TabsContent value='production'>
-					<ContentTab title='Лиды для производства' />
+					<Title title='Лиды для производства' />
+					<ContentTab />
 				</TabsContent>
 				<TabsContent value='business'>
-					<ContentTab title='Клиенты для бизнеса' />
+					<Title title='Клиенты для бизнеса' />
+					<ContentTab />
 				</TabsContent>
 				<TabsContent value='phone'>
-					<ContentTab title='Определить телефон посетителя сайта' />
+					<Title title='Определить телефон посетителя сайта' />
+					<ContentTab />
 				</TabsContent>
 			</Tabs>
 		</section>
