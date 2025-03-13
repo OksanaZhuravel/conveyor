@@ -28,7 +28,10 @@ export const Navigation = ({
 	]
 
 	return (
-		<nav className={cn('flex flex-1 gap-[60px] w-full', className)} {...props}>
+		<nav
+			className={cn('flex justify-center flex-1 gap-[60px] w-full', className)}
+			{...props}
+		>
 			{navItems.map((item) => (
 				<NavigationLink key={item.title} href={item.url}>
 					{item.title}

@@ -28,7 +28,7 @@ export default function NotFoundPage() {
 
 function NotFoundContent() {
 	return (
-		<div className='w-full h-full flex flex-col items-center justify-center space-y-4'>
+		<div className='w-full h-screen flex flex-col items-center justify-center space-y-4'>
 			<h1 className='text-3xl font-semibold leading-tight tracking-tight'>
 				Страница не найдена
 			</h1>

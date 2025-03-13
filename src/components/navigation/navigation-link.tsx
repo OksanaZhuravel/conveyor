@@ -37,7 +37,7 @@ function NavigationLinkComponent({
 		<Link
 			aria-current={isActive ? 'page' : undefined}
 			className={cn(
-				'inline-block transition-colors whitespace-nowrap hover:text-disabled',
+				'inline-block transition-colors whitespace-nowrap hover:text-disabled text-2xl',
 				isActive ? 'text-accent' : 'text-background'
 			)}
 			href={href}

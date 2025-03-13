@@ -10,6 +10,7 @@ import { Menu } from 'lucide-react'
 import Image from 'next/image'
 import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import { Social } from './social'
 
 export const Header = () => {
 	const isMobile = useIsMobile(MOBILE_WIDTH)
@@ -40,6 +41,7 @@ export const Header = () => {
 			{!isMobile && (
 				<>
 					<Navigation />
+					<Social />
 				</>
 			)}
 			{isMobile && (

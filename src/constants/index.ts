@@ -25,11 +25,14 @@ export const enum Paths {
 	WORKS = '#how-it-works',
 	PRICING = '#pricing',
 	REVIEWS = '#reviews',
-
 	CONTACT = '#contact',
 	BLOG = '/blog',
 	OFFER = '/offer',
 	PRIVACY_POLICY = '/privacy-policy',
 	DATA_PROCESSING = '/data-processing-agreement',
 	LOGIN = '/login',
+
+	WHATSAPP = 'https://wa.me/74951183282',
+	TELEGRAM = 'https://t.me/74951183282',
+	TELEPHONE = 'tel:+74951183282',
 }
