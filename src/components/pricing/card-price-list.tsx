@@ -1,5 +1,4 @@
 import { CardPrice } from '@/components/pricing/card-price'
-import { IDs } from '@/constants'
 const pricingData = [
 	{
 		title: 'Старт',
@@ -39,7 +38,7 @@ const pricingData = [
 ]
 export const CardPriceList = () => {
 	return (
-		<div id={IDs.PRICING} className='flex justify-between gap-5 items-start '>
+		<div className='flex justify-between gap-5 items-start '>
 			{pricingData.map((data, index) => (
 				<CardPrice
 					key={index}
