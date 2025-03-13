@@ -3,9 +3,9 @@
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
-import { ComponentProps, useEffect, useState } from 'react'
+import { ComponentProps, Suspense, useEffect, useState } from 'react'
 
-export default function NavigationLink({
+function NavigationLinkComponent({
 	href,
 	...rest
 }: ComponentProps<typeof Link>) {
@@ -43,5 +43,13 @@ export default function NavigationLink({
 			href={href}
 			{...rest}
 		/>
+	)
+}
+
+export default function NavigationLink(props: ComponentProps<typeof Link>) {
+	return (
+		<Suspense fallback={<div>Загрузка...</div>}>
+			<NavigationLinkComponent {...props} />
+		</Suspense>
 	)
 }

@@ -2,6 +2,7 @@ import { Footer } from '@/components/footer/footer'
 import { Header } from '@/components/header/header'
 import type { Metadata } from 'next'
 import { Inter, Montserrat } from 'next/font/google'
+import { Suspense } from 'react'
 import './globals.css'
 
 const inter = Inter({
@@ -30,7 +31,7 @@ export default function RootLayout({
 				className={`${inter.variable} ${montserrat.variable} m-auto h-full`}
 			>
 				<Header />
-				{children}
+				<Suspense>{children}</Suspense>
 				<Footer />
 			</body>
 		</html>
