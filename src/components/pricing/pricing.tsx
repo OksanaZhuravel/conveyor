@@ -1,7 +1,6 @@
 import { Title } from '@/components/ui/title'
-import { CardPrice } from './card-price'
-import { CardPriceList } from './card-price-list'
 import { Additionally } from './additionally'
+import { CardPriceList } from './card-price-list'
 
 export const Pricing = () => {
 	return (
