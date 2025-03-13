@@ -26,9 +26,9 @@ export const ContentTab = ({ title, titleAccent }: ContentTabProps) => {
 			<div className='grid grid-cols-2 gap-5'>
 				<Card>
 					<CardHeader>
-						<CardTitle className='flex items-center justify-start gap-7.5 '>
+						<CardTitle>
 							<span className='text-32'>Оплата за результат</span>
-							<StarIcon className='w-11 h-11' />
+							<StarIcon className='w-11 h-11 rotate-16' />
 						</CardTitle>
 						<CardDescription>
 							Вы платите только за переданные и получение вами целевые Лиды — их
@@ -41,9 +41,9 @@ export const ContentTab = ({ title, titleAccent }: ContentTabProps) => {
 				</Card>
 				<Card>
 					<CardHeader>
-						<CardTitle className='flex items-center justify-start gap-7.5 '>
+						<CardTitle>
 							<span className='text-32'>Качественные лиды</span>
-							<StarIcon className='w-11 h-11' />
+							<StarIcon className='w-11 h-11 rotate-16' />
 						</CardTitle>
 						<CardDescription>
 							Все передаваемые вам Лиды — это потенциальные клиенты, которые
@@ -61,9 +61,9 @@ export const ContentTab = ({ title, titleAccent }: ContentTabProps) => {
 				</Card>
 				<Card>
 					<CardHeader>
-						<CardTitle className='flex items-center justify-start gap-7.5 '>
+						<CardTitle>
 							<span className='text-32'>Любой объём — на ваш выбор</span>
-							<StarIcon className='w-11 h-11' />
+							<StarIcon className='w-11 h-11 rotate-16' />
 						</CardTitle>
 						<CardDescription>
 							Покупайте сколько контактов потенциальных клиентов в месяц
@@ -81,9 +81,9 @@ export const ContentTab = ({ title, titleAccent }: ContentTabProps) => {
 				</Card>
 				<Card>
 					<CardHeader>
-						<CardTitle className='flex items-center justify-start gap-7.5 '>
+						<CardTitle>
 							<span className='text-32'>Комплекс технологий</span>
-							<StarIcon className='w-11 h-11' />
+							<StarIcon className='w-11 h-11 rotate-16' />
 						</CardTitle>
 						<CardDescription>
 							После расчёта стоимости Лидов и оплаты выбранного пакета —

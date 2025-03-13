@@ -32,7 +32,10 @@ function CardTitle({ className, ...props }: React.ComponentProps<'div'>) {
 	return (
 		<div
 			data-slot='card-title'
-			className={cn('leading-none text-foreground', className)}
+			className={cn(
+				'leading-none text-foreground flex items-start justify-start gap-7.5',
+				className
+			)}
 			{...props}
 		/>
 	)
