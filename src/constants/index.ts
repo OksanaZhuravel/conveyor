@@ -22,11 +22,14 @@ export const TABLET_WIDTH = 1023.5
  */
 export const enum Paths {
 	BASE = '/',
+	WORKS = '#how-it-works',
+	PRICING = '#pricing',
+	REVIEWS = '#reviews',
 
-	CONTACT = '/contact',
+	CONTACT = '#contact',
 	BLOG = '/blog',
 	OFFER = '/offer',
 	PRIVACY_POLICY = '/privacy-policy',
-	DATA_PROCESSING_AGREEMENT = '/data-processing-agreement',
+	DATA_PROCESSING = '/data-processing-agreement',
 	LOGIN = '/login',
 }

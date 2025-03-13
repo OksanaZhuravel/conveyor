@@ -10,15 +10,27 @@ export const Navigation = ({
 }: React.HTMLAttributes<HTMLElement>) => {
 	const navItems = [
 		{
-			title: 'Главная',
-			url: Paths.BASE,
+			title: 'Как это работает',
+			url: Paths.WORKS,
+		},
+		{
+			title: 'Цена',
+			url: Paths.PRICING,
+		},
+		{
+			title: 'Отзывы',
+			url: Paths.REVIEWS,
+		},
+		{
+			title: 'Контакты',
+			url: Paths.CONTACT,
 		},
 	]
 
 	return (
-		<nav className={cn('flex gap-2 w-full', className)} {...props}>
+		<nav className={cn('flex flex-1 gap-[60px] w-full', className)} {...props}>
 			{navItems.map((item) => (
-				<NavigationLink key={item.url} href={item.url}>
+				<NavigationLink key={item.title} href={item.url}>
 					{item.title}
 				</NavigationLink>
 			))}

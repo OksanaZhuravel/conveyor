@@ -15,7 +15,6 @@ export const Header = () => {
 	const isMobile = useIsMobile(MOBILE_WIDTH)
 	const [isSheetOpen, setIsSheetOpen] = useState(false)
 	const pathname = usePathname()
-
 	const router = useRouter()
 
 	useEffect(() => {
@@ -23,19 +22,19 @@ export const Header = () => {
 	}, [pathname])
 
 	return (
-		<header className='flex gap-4 w-full items-center justify-start '>
+		<header className='pl-[70px] py-1.5 pr-7.5 bg-foreground rounded-b-30 w-full min-h-[82px] flex items-center justify-between'>
 			<div
-				className='cursor-pointer hover:opacity-60 flex items-center gap-1.5 flex-1'
+				className='cursor-pointer hover:opacity-60 transition-opacity'
 				onClick={() => {
 					router.replace(Paths.BASE)
 				}}
 			>
 				<Image
 					src='/logo.png'
-					alt='ООО «ДС-ГРУПП»'
+					alt='ООО «ДС-ГРУПП»'
 					width={251}
 					height={70}
-					className='w-auto h-auto '
+					className=' w-[251px] h-[70px]'
 				/>
 			</div>
 			{!isMobile && (

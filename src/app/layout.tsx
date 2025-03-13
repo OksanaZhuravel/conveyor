@@ -27,7 +27,7 @@ export default function RootLayout({
 	return (
 		<html lang='ru'>
 			<body
-				className={`${inter.variable} ${montserrat.variable} m-auto h-screen`}
+				className={`${inter.variable} ${montserrat.variable} m-auto h-full`}
 			>
 				<Header />
 				{children}
