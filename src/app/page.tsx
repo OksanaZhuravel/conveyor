@@ -1,8 +1,9 @@
-import { Answer } from '@/components/answer/answer'
+import { Answers } from '@/components/answers/answers'
 import { Client } from '@/components/client-page/client'
 import { MainTabs } from '@/components/content-tabs/main-tabs'
 import { Pricing } from '@/components/pricing/pricing'
 import { Promo } from '@/components/promo/promo'
+import { Reviews } from '@/components/reviews/reviews'
 
 export default function Home() {
 	return (
@@ -12,8 +13,8 @@ export default function Home() {
 				<MainTabs />
 				<Pricing />
 				<Client />
-
-				<Answer />
+				<Reviews />
+				<Answers />
 			</main>
 		</div>
 	)

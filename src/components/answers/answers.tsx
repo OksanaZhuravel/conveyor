@@ -7,16 +7,20 @@ import {
 import { Title } from '@/components/ui/title'
 import Image from 'next/image'
 
-export const Answer = () => {
+export const Answers = () => {
 	return (
 		<section className='w-full m-auto max-w-[1780px] pt-32.5'>
 			<div className='flex flex-col items-center pb-15'>
 				<Title title='Вопросы и ответы' />
 			</div>
 			<div className='flex items-start justify-between'>
-				<Accordion type='multiple'>
+				<Accordion
+					type='single'
+					collapsible
+					className='w-1/2 flex flex-col gap-5'
+				>
 					<AccordionItem value='item-1'>
-						<AccordionTrigger className='border-none text-2xl'>
+						<AccordionTrigger>
 							На сколько это безопасно, законно и может ли навредить моему
 							сайту?
 						</AccordionTrigger>
@@ -39,7 +43,7 @@ export const Answer = () => {
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value='item-2'>
-						<AccordionTrigger className='border-none text-2xl'>
+						<AccordionTrigger>
 							Откуда берутся номера телефонов?
 						</AccordionTrigger>
 						<AccordionContent>
@@ -51,7 +55,7 @@ export const Answer = () => {
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value='item-3'>
-						<AccordionTrigger className='border-none text-2xl'>
+						<AccordionTrigger>
 							Смогу ли я сам установить код на сайт?
 						</AccordionTrigger>
 						<AccordionContent>
@@ -63,7 +67,7 @@ export const Answer = () => {
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value='item-4'>
-						<AccordionTrigger className='border-none text-2xl'>
+						<AccordionTrigger>
 							На какую CMS или конструктор можно установить код «Лид Конвейер»?
 						</AccordionTrigger>
 						<AccordionContent>
@@ -75,9 +79,7 @@ export const Answer = () => {
 						</AccordionContent>
 					</AccordionItem>
 					<AccordionItem value='item-5'>
-						<AccordionTrigger className='border-none text-2xl'>
-							Как оплатить ваш сервис?
-						</AccordionTrigger>
+						<AccordionTrigger>Как оплатить ваш сервис?</AccordionTrigger>
 						<AccordionContent>
 							<p className='text-2xl'>
 								Оплата производится на сайте через платежный сервис
@@ -90,6 +92,7 @@ export const Answer = () => {
 					alt='Девушка с ноутбуком'
 					width={879}
 					height={581}
+					className='w-1/2 max-w-[879px]'
 				/>
 			</div>
 		</section>
