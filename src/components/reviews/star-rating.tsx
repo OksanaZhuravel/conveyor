@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const StarRating = ({ rating }: { rating: number }) => {
 	const fullStars = Math.floor(rating)
-	const halfStar = rating % 1 !== 0
+	// const halfStar = rating % 1 !== 0
 
 	return (
 		<div className='flex items-center'>
