@@ -25,7 +25,7 @@ const reviews = [
 
 export const ReviewsList = () => {
   return (
-    <>
+    <div className="flex h-full min-h-max items-start justify-between gap-5">
       {reviews.map((review, index) => (
         <article
           key={index}
@@ -43,6 +43,6 @@ export const ReviewsList = () => {
           </div>
         </article>
       ))}
-    </>
+    </div>
   );
 };

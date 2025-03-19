@@ -1,5 +1,5 @@
 import { ReviewsList } from '@/components/reviews/reviews-list';
-import { ReviewsVideo } from '@/components/reviews/reviews-video';
+import { ReviewsVideoList } from '@/components/reviews/reviews-video-list';
 import { Title } from '@/components/ui/title';
 
 export const Reviews = () => {
@@ -12,9 +12,9 @@ export const Reviews = () => {
           более 2-х лет
         </p>
       </div>
-      <div className="flex h-max items-start justify-center gap-5 pt-5">
+      <div className="flex h-full min-h-max flex-col items-start justify-center gap-10 pt-5">
         <ReviewsList />
-        <ReviewsVideo />
+        <ReviewsVideoList />
       </div>
     </section>
   );
