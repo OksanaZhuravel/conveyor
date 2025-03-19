@@ -1,15 +1,15 @@
 export interface ContentTabProps {
-	title: string
-	titleAccent?: string
+  title: string;
+  titleAccent?: string;
 }
 
 export const Title = ({ title, titleAccent }: ContentTabProps) => {
-	return (
-		<h2 className='text-5xl flex flex-col font-bold font-montserrat leading-13 items-center pb-5'>
-			{title}
-			<span className='text-5xl leading-13  font-bold font-montserrat text-accent'>
-				{titleAccent}
-			</span>
-		</h2>
-	)
-}
+  return (
+    <h2 className="font-montserrat flex flex-col items-center pb-5 text-5xl leading-13 font-bold">
+      {title}
+      <span className="font-montserrat text-accent text-5xl leading-13 font-bold">
+        {titleAccent}
+      </span>
+    </h2>
+  );
+};

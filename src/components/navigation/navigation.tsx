@@ -1,39 +1,39 @@
-'use client'
+'use client';
 
-import { Paths } from '@/constants'
-import { cn } from '@/lib/utils'
-import NavigationLink from './navigation-link'
+import { Paths } from '@/constants';
+import { cn } from '@/lib/utils';
+import NavigationLink from './navigation-link';
 
 export const Navigation = ({
-	className,
-	...props
+  className,
+  ...props
 }: React.HTMLAttributes<HTMLElement>) => {
-	const navItems = [
-		{
-			title: 'Как это работает',
-			url: Paths.WORKS,
-		},
-		{
-			title: 'Цена',
-			url: Paths.PRICING,
-		},
-		{
-			title: 'Отзывы',
-			url: Paths.REVIEWS,
-		},
-		{
-			title: 'Контакты',
-			url: Paths.CONTACT,
-		},
-	]
+  const navItems = [
+    {
+      title: 'Как это работает',
+      url: Paths.WORKS,
+    },
+    {
+      title: 'Цена',
+      url: Paths.PRICING,
+    },
+    {
+      title: 'Отзывы',
+      url: Paths.REVIEWS,
+    },
+    {
+      title: 'Контакты',
+      url: Paths.CONTACT,
+    },
+  ];
 
-	return (
-		<nav className={cn('flex w-full', className)} {...props}>
-			{navItems.map((item) => (
-				<NavigationLink key={item.title} href={item.url}>
-					{item.title}
-				</NavigationLink>
-			))}
-		</nav>
-	)
-}
+  return (
+    <nav className={cn('flex w-full', className)} {...props}>
+      {navItems.map((item) => (
+        <NavigationLink key={item.title} href={item.url}>
+          {item.title}
+        </NavigationLink>
+      ))}
+    </nav>
+  );
+};
