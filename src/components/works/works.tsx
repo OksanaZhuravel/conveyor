@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
 import { DotButton } from './dot-button';
 
-const banners = [
+const sliders = [
   {
     title: 'Как это работает?',
     id: '01',
@@ -67,10 +67,10 @@ export const Works = () => {
   const [api, setApi] = useState<CarouselApi | null>(null);
 
   useEffect(() => {
-    if (banners.length) {
-      setScrollSnaps(banners.map((_, index) => index));
+    if (sliders.length) {
+      setScrollSnaps(sliders.map((_, index) => index));
     }
-  }, [banners]);
+  }, [sliders]);
 
   const onDotButtonClick = useCallback(
     (index: number) => {
@@ -86,7 +86,7 @@ export const Works = () => {
     }
   }, [api]);
 
-  if (!banners.length) {
+  if (!sliders.length) {
     return null;
   }
 
@@ -101,34 +101,34 @@ export const Works = () => {
         setApi={setApi}
       >
         <CarouselContent>
-          {banners.map((banner) => (
+          {sliders.map((slider) => (
             <CarouselItem
-              key={banner.id}
+              key={slider.id}
               className="flex w-full flex-col items-center gap-21.5"
             >
               <h2 className="font-montserrat text-5xl/[52px] font-bold">
-                {banner.title}
+                {slider.title}
               </h2>
               <div className="flex w-full items-start justify-between gap-22.5">
                 <div className="flex w-full max-w-[659px] flex-col gap-7.5">
                   <div className="flex items-center justify-start gap-10">
                     <span className="font-montserrat text-[80px]/[80px] font-bold">
-                      {banner.id}
+                      {slider.id}
                     </span>
                     <Image
-                      src={banner.image}
-                      alt={banner.description}
+                      src={slider.image}
+                      alt={slider.description}
                       width={72}
                       height={72}
                     />
                   </div>
                   <h3 className="font-montserrat text-5xl/[52px] font-bold">
-                    {banner.description}
+                    {slider.description}
                   </h3>
                 </div>
 
                 <ul className="flex w-full max-w-[730px] flex-col gap-5">
-                  {banner.steps.map((step, stepIndex) => (
+                  {slider.steps.map((step, stepIndex) => (
                     <li key={stepIndex} className="text-2xl">
                       {step}
                     </li>
