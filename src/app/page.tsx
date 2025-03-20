@@ -1,6 +1,7 @@
 import { Answers } from '@/components/answers/answers';
 import { Client } from '@/components/client-page/client';
 import { MainTabs } from '@/components/content-tabs/main-tabs';
+import { LeadGeneration } from '@/components/generation/lead-generation';
 import { Orders } from '@/components/orders/orders';
 import { Pricing } from '@/components/pricing/pricing';
 import { PromoMain } from '@/components/promo/promo-main';
@@ -35,6 +36,7 @@ export default function Home() {
           isReverse
         />
         <Answers />
+        <LeadGeneration />
       </main>
     </div>
   );
