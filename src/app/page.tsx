@@ -5,6 +5,7 @@ import { Pricing } from '@/components/pricing/pricing';
 import { PromoMain } from '@/components/promo/promo-main';
 import { PromoSection } from '@/components/promo/promo-section';
 import { Reviews } from '@/components/reviews/reviews';
+import { Technology } from '@/components/technology/technology';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Pricing />
         <Client />
         <Reviews />
+        <Technology />
         <PromoSection
           title="Зарегистрируйтесь и добавьте свой проект в систему — начните получать
           Лидов сегодня!"
