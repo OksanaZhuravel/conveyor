@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { useState } from 'react';
 
-export const Promo = () => {
+export const PromoMain = () => {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
