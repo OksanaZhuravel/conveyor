@@ -1,5 +1,6 @@
 import { Answers } from '@/components/answers/answers';
 import { Client } from '@/components/client-page/client';
+import { Contacts } from '@/components/contacts/contacts';
 import { MainTabs } from '@/components/content-tabs/main-tabs';
 import { LeadGeneration } from '@/components/generation/lead-generation';
 import { Orders } from '@/components/orders/orders';
@@ -37,6 +38,7 @@ export default function Home() {
         />
         <Answers />
         <LeadGeneration />
+        <Contacts />
       </main>
     </div>
   );

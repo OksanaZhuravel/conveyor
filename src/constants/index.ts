@@ -35,6 +35,7 @@ export const enum Paths {
   WHATSAPP = 'https://wa.me/74951183282',
   TELEGRAM = 'https://t.me/74951183282',
   TELEPHONE = 'tel:+74951183282',
+  EMAIL = 'mailto::mailbox@leadconveer.ru',
 }
 
 export const enum IDs {

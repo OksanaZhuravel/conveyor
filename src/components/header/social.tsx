@@ -15,7 +15,7 @@ export const Social = ({
           href={Paths.WHATSAPP}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex h-10 w-10 items-center justify-center"
+          className="flex h-10 w-10 items-center justify-center transition-all hover:scale-105"
         >
           <Image src="/whatsapp.png" alt="Telegram" width={40} height={40} />
         </Link>
@@ -23,7 +23,7 @@ export const Social = ({
           href={Paths.TELEGRAM}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex h-10 w-10 items-center justify-center"
+          className="flex h-10 w-10 items-center justify-center transition-all hover:scale-105"
         >
           <Image src="/telegram.png" alt="Telegram" width={40} height={40} />
         </Link>
