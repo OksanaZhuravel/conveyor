@@ -13,7 +13,7 @@ export const ClientList = () => {
       {clientLogos.map((logo, index) => (
         <div
           key={index}
-          className="bg-muted rounded-30 flex h-[200px] w-[430px] items-center justify-center"
+          className="bg-muted rounded-30 flex h-[200px] w-[430px] items-center justify-center shadow-lg"
         >
           <Image
             src={logo.src}

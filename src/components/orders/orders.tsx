@@ -1,3 +1,4 @@
+import { OrdersItems } from '@/components/orders/orders-items';
 import { OrdersList } from '@/components/orders/orders-list';
 import { Title } from '@/components/ui/title';
 
@@ -12,6 +13,7 @@ export const Orders = () => {
         </p>
       </div>
       <OrdersList />
+      <OrdersItems />
     </section>
   );
 };
