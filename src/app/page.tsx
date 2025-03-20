@@ -6,6 +6,7 @@ import { PromoMain } from '@/components/promo/promo-main';
 import { PromoSection } from '@/components/promo/promo-section';
 import { Reviews } from '@/components/reviews/reviews';
 import { Technology } from '@/components/technology/technology';
+import { Works } from '@/components/works/works';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           Лидов сегодня!"
           src="/promo_2.png"
         />
+        <Works />
         <PromoSection
           className="flex-row-reverse"
           title="Давайте принесём результат Вашему бизнесу? Завалите своей отдел продаж Лидами!"
