@@ -4,7 +4,7 @@ import { Title } from '@/components/ui/title';
 
 export const Orders = () => {
   return (
-    <section className="m-auto w-full max-w-[1780px] pt-30">
+    <section className="m-auto w-full max-w-[1780px] pt-10 md:pt-20 xl:pt-30">
       <div className="flex flex-col items-center pb-15">
         <Title title="Почему лучше " titleAccent="заказать Лидов у нас" />
         <p className="text-32 text-muted-foreground max-w-[885px] text-center">
