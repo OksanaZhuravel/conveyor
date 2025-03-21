@@ -4,19 +4,19 @@ import Image from 'next/image';
 
 export const Additionally = () => {
   return (
-    <div className="w-full pt-33">
+    <div className="w-full pt-10 md:pt-20 xl:pt-30">
       <Title title="Дополнительные услуги" />
-      <div className="flex items-center justify-center gap-5 pt-5">
-        <article className="rounded-30 bg-muted flex h-full min-h-[330px] w-full max-w-[730px] flex-col justify-between p-10 hover:shadow-lg">
+      <div className="flex flex-wrap items-center justify-center gap-5 p-5 pt-5 md:p-0">
+        <article className="rounded-30 bg-muted flex h-full min-h-[330px] w-full flex-col justify-between p-10 hover:shadow-lg md:max-w-[550px] 2xl:max-w-[730px]">
           <div className="flex items-start justify-between">
             <div className="flex flex-col gap-5">
-              <p className="font-montserrat max-w-[336px] text-4xl font-bold">
+              <p className="font-montserrat max-w-[336px] text-2xl font-bold lg:text-4xl">
                 Создание промо-страницы
               </p>
               <p className="font-montserrat text-2xl">
                 от
                 <span
-                  className="font-montserrat ml-3.5 bg-clip-text text-4xl font-bold text-transparent"
+                  className="font-montserrat ml-3.5 bg-clip-text text-2xl font-bold text-transparent lg:text-4xl"
                   style={{
                     backgroundImage:
                       'linear-gradient(90deg, #FF6600 0%, #F26659 27%, #F06177 37%, #E55D97 48%, #CA46D2 71%, #8D13F9 100%)',
@@ -31,16 +31,16 @@ export const Additionally = () => {
 
           <Button className="uppercase">Купить</Button>
         </article>
-        <article className="rounded-30 bg-muted flex h-full min-h-[330px] w-full max-w-[730px] flex-col justify-between p-10 hover:shadow-lg">
+        <article className="rounded-30 bg-muted flex h-full min-h-[330px] w-full flex-col justify-between p-10 hover:shadow-lg md:max-w-[550px] 2xl:max-w-[730px]">
           <div className="flex items-start justify-between">
             <div className="flex flex-col gap-5">
-              <p className="font-montserrat max-w-[556px] text-4xl font-bold">
+              <p className="font-montserrat max-w-[556px] text-2xl font-bold lg:text-4xl">
                 Настройка и ведение Яндекс.Директ
               </p>
               <p className="font-montserrat text-2xl">
                 от
                 <span
-                  className="font-montserrat ml-3.5 bg-clip-text text-4xl font-bold text-transparent"
+                  className="font-montserrat ml-3.5 bg-clip-text text-2xl font-bold text-transparent lg:text-4xl"
                   style={{
                     backgroundImage:
                       'linear-gradient(90deg, #FF6600 0%, #F26659 27%, #F06177 37%, #E55D97 48%, #CA46D2 71%, #8D13F9 100%)',

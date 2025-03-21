@@ -5,10 +5,13 @@ import { IDs } from '@/constants';
 
 export const Reviews = () => {
   return (
-    <section id={IDs.REVIEWS} className="m-auto w-full max-w-[1780px] pt-32.5">
+    <section
+      id={IDs.REVIEWS}
+      className="m-auto w-full max-w-[1780px] pt-10 md:pt-20 xl:pt-30"
+    >
       <div className="flex flex-col items-center pb-15">
         <Title title="Отзывы клиентов" />
-        <p className="text-32 text-muted-foreground max-w-[791px] text-center">
+        <p className="lg:text-32 text-muted-foreground max-w-[791px] text-center">
           Более 89% наших клиентов сотрудничают с нами ежемесячно на протяжении
           более 2-х лет
         </p>

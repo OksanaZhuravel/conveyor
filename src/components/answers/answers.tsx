@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 export const Answers = () => {
   return (
-    <section className="m-auto w-full max-w-[1780px] pt-32.5">
+    <section className="m-auto w-full max-w-[1780px] pt-10 md:pt-20 xl:pt-30">
       <div className="flex flex-col items-center pb-15">
         <Title title="Вопросы и ответы" />
       </div>

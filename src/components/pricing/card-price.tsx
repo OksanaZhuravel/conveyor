@@ -26,19 +26,21 @@ export const CardPrice = ({
   return (
     <article
       className={cn(
-        'rounded-30 flex h-full min-h-[813px] w-1/3 flex-col gap-7.5 p-10 hover:shadow-lg',
+        'rounded-30 flex h-full min-h-[813px] flex-col gap-7.5 p-10 hover:shadow-lg 2xl:w-[580px]',
         cardClass
       )}
     >
       <div className="flex max-w-[424px] gap-5">
-        <p className="text-32 rounded-20 border px-5 py-2.5">{title}</p>
+        <p className="lg:text-32 rounded-20 h-11 border px-2.5 py-2.5 lg:h-auto lg:px-5">
+          {title}
+        </p>
         <Image src={starIcon} alt="Звезда" width={56} height={56} />
       </div>
       <div className="flex flex-col gap-5">
-        <h2 className="font-montserrat mb-2 max-w-[424px] text-4xl font-bold">
+        <h2 className="font-montserrat mb-2 max-w-[424px] text-2xl font-bold lg:text-4xl">
           {header}&nbsp;
           <span
-            className="font-montserrat bg-clip-text text-4xl font-bold text-transparent"
+            className="font-montserrat bg-clip-text text-2xl font-bold text-transparent lg:text-4xl"
             style={{
               backgroundImage:
                 'linear-gradient(90deg, #FF6600 0%, #F26659 27%, #F06177 37%, #E55D97 48%, #CA46D2 71%, #8D13F9 100%)',

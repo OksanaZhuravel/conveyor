@@ -10,42 +10,44 @@ export const Contacts = () => {
     >
       <div className="flex h-full w-full max-w-1/2 flex-col items-center pt-20 pb-20 pl-20">
         <h2 className="font-montserrat text-5xl/[52px] font-bold">Контакты</h2>
-        <p className="text-32 text-muted-foreground max-w-[760px] py-5 text-center">
+        <p className="lg:text-32 text-muted-foreground max-w-[760px] py-5 text-center">
           Есть вопрос, или вы хотите получить бесплатную консультацию? Свяжитесь
           с нами, и мы предоставим необходимую информацию!
         </p>
         <div className="flex w-full flex-col items-start gap-7.5 pt-10">
           <address className="not-italic">
-            <p className="text-32 text-muted-foreground">Адрес офиса</p>
-            <p className="text-32">г. Москва, ул. Дубининская, д. 53</p>
+            <p className="lg:text-32 text-muted-foreground">Адрес офиса</p>
+            <p className="lg:text-32">г. Москва, ул. Дубининская, д. 53</p>
           </address>
           <div>
-            <p className="text-32 text-muted-foreground">Телефон:</p>
+            <p className="lg:text-32 text-muted-foreground">Телефон:</p>
             <Link
               href={Paths.TELEPHONE}
-              className="text-32 hover:text-accent transition-[color,box-shadow]"
+              className="lg:text-32 hover:text-accent transition-[color,box-shadow]"
             >
               +7 495 118-32-82
             </Link>
           </div>
           <div>
-            <p className="text-32 text-muted-foreground">Электронная почта</p>
+            <p className="lg:text-32 text-muted-foreground">
+              Электронная почта
+            </p>
             <Link
               href={Paths.EMAIL}
-              className="text-32 hover:text-accent transition-[color,box-shadow]"
+              className="lg:text-32 hover:text-accent transition-[color,box-shadow]"
             >
               mailbox@leadconveer.ru
             </Link>
           </div>
           <div className="flex items-center gap-3">
-            <p className="text-32 text-muted-foreground max-w-[489px]">
+            <p className="lg:text-32 text-muted-foreground max-w-[489px]">
               Или напишите нам в любимом мессенджере:
             </p>
             <Link
               href={Paths.TELEGRAM}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-32 flex items-center gap-2 transition-all hover:scale-105"
+              className="lg:text-32 flex items-center gap-2 transition-all hover:scale-105"
             >
               <Image
                 src="/telegram.png"

@@ -38,7 +38,7 @@ const pricingData = [
 ];
 export const CardPriceList = () => {
   return (
-    <div className="flex items-start justify-between gap-5">
+    <div className="flex w-full flex-wrap items-center justify-center gap-5 lg:items-start">
       {pricingData.map((data, index) => (
         <CardPrice
           key={index}
