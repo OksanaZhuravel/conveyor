@@ -112,7 +112,7 @@ export const Works = () => {
               <div className="flex w-full items-start justify-between gap-22.5">
                 <div className="flex w-full max-w-[659px] flex-col gap-7.5">
                   <div className="flex items-center justify-start gap-10">
-                    <span className="font-montserrat text-[80px]/[80px] font-bold">
+                    <span className="font-montserrat text-3xl leading-[80px] font-bold md:text-4xl lg:text-5xl xl:text-[80px]">
                       {slider.id}
                     </span>
                     <Image

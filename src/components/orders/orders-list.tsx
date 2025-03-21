@@ -24,7 +24,7 @@ export const OrdersList = () => {
           className="rounded-30 bg-muted flex h-full min-h-[330px] w-full max-w-[580px] flex-col justify-start gap-3 p-10 shadow-lg"
         >
           <div className="flex items-start justify-between">
-            <p className="font-montserrat text-[80px] leading-[80px] font-bold">
+            <p className="font-montserrat text-3xl leading-[80px] font-bold md:text-4xl lg:text-5xl xl:text-[80px]">
               {order.id}
             </p>
             <Image

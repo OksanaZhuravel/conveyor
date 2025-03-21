@@ -12,17 +12,17 @@ export const PromoMain = () => {
     setIsActive(true);
   };
   return (
-    <section className="bg-muted w-full gap-32 py-[60px] pr-[130px] pl-[70px]">
-      <div className="m-auto flex max-w-[1780px] items-center justify-between">
-        <div className="flex h-full w-full max-w-[800px] flex-col items-start gap-10">
-          <h1 className="font-montserrat text-[80px] leading-none font-bold">
-            <span className="font-montserrat text-accent text-[80px] leading-none font-bold">
+    <section className="bg-muted w-full p-5 lg:py-15 lg:pr-17.5 lg:pl-17.5 xl:pr-32.5">
+      <div className="m-auto flex max-w-[1780px] flex-col items-center justify-between gap-10 md:flex-row xl:gap-32">
+        <div className="flex h-full w-full max-w-[800px] flex-col items-start gap-5 lg:gap-10">
+          <h1 className="font-montserrat text-3xl leading-none font-bold md:text-4xl lg:text-5xl xl:text-[80px]">
+            <span className="font-montserrat text-accent text-3xl leading-none font-bold md:text-4xl lg:text-5xl xl:text-[80px]">
               Лидогенерация
             </span>{' '}
             для&nbsp;бизнеса
           </h1>
-          <div className="flex items-center justify-center gap-5">
-            <p className="text-32 max-w-[525px] text-left">
+          <div className="flex items-center justify-center gap-3 lg:gap-5">
+            <p className="lg:text-32 max-w-xs text-left lg:max-w-[525px]">
               Покупайте только целевые лиды по фиксированной цене от 300 ₽
             </p>
             <Image
@@ -30,6 +30,7 @@ export const PromoMain = () => {
               alt="Лицо с денежным ртом"
               width={72}
               height={72}
+              className="h-8 w-8 md:h-12 md:w-12 xl:h-18 xl:w-18"
             />
           </div>
           <Button
@@ -45,9 +46,10 @@ export const PromoMain = () => {
             alt="Девушка с ноутбуком"
             width={791}
             height={497}
+            className="object-cover"
           />
-          <StarIcon className="absolute top-26.5 -right-7.5" />
-          <StarIcon className="absolute bottom-19.5 -left-7" />
+          <StarIcon className="absolute top-4 right-0 h-10 w-10 md:top-26.5 md:-right-7.5 lg:h-15.5 lg:w-15.5" />
+          <StarIcon className="absolute bottom-4 h-10 w-10 md:bottom-19.5 md:-left-7 lg:h-15.5 lg:w-15.5" />
         </div>
       </div>
     </section>
