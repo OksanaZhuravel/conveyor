@@ -23,7 +23,7 @@ export const Header = () => {
   }, [pathname]);
 
   return (
-    <header className="bg-foreground rounded-b-30 flex min-h-[82px] w-full items-center justify-between py-1.5 pr-7.5 pl-[70px]">
+    <header className="bg-foreground rounded-b-30 flex min-h-[82px] w-full items-center justify-between py-1.5 pr-7.5 pl-7.5 xl:pl-17.5">
       <div
         className="cursor-pointer transition-opacity hover:opacity-60"
         onClick={() => {
@@ -35,12 +35,12 @@ export const Header = () => {
           alt="ООО «ДС-ГРУПП»"
           width={251}
           height={70}
-          className="h-[70px] w-[251px]"
+          className="h-[40px] w-[140px] lg:h-[70px] lg:w-[251px]"
         />
       </div>
       {!isMobile && (
         <>
-          <Navigation className="flex-1 justify-center gap-[60px]" />
+          <Navigation className="flex-1 justify-center gap-5 lg:gap-10 xl:gap-15" />
           <Social className="items-center" />
         </>
       )}
