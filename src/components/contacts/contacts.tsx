@@ -6,9 +6,9 @@ export const Contacts = () => {
   return (
     <section
       id={IDs.CONTACT}
-      className="bg-muted rounded-30 m-auto my-30 flex h-full max-w-[1780px] items-center justify-start gap-15"
+      className="bg-muted rounded-30 m-auto my-10 flex h-full max-w-[1780px] flex-col items-center justify-start gap-5 md:my-20 md:flex-row md:gap-10 lg:gap-15 xl:my-30"
     >
-      <div className="flex h-full w-full max-w-1/2 flex-col items-center pt-20 pb-20 pl-20">
+      <div className="flex h-full w-full flex-col items-center p-5 md:max-w-1/2 md:pt-20 md:pb-20 md:pl-20">
         <h2 className="font-montserrat text-3xl leading-[80px] font-bold md:text-4xl lg:text-5xl">
           Контакты
         </h2>
