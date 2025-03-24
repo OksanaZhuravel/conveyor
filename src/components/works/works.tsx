@@ -6,7 +6,7 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel';
 import { IDs } from '@/constants';
-// import Autoplay from 'embla-carousel-autoplay';
+import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
 import { DotButton } from './dot-button';
@@ -96,7 +96,7 @@ export const Works = () => {
       className="rounded-30 bg-muted m-auto mt-10 max-w-[1780px] px-10 py-10 md:mt-20 xl:mt-30 xl:px-37.5 xl:py-20"
     >
       <Carousel
-        // plugins={[Autoplay({ playOnInit: true, delay: 10000 })]}
+        plugins={[Autoplay({ playOnInit: true, delay: 10000 })]}
         opts={{ loop: true }}
         setApi={setApi}
       >
