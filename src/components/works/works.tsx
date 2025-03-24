@@ -104,7 +104,7 @@ export const Works = () => {
           {sliders.map((slider) => (
             <CarouselItem
               key={slider.id}
-              className="flex w-full flex-col items-center gap-10 lg:gap-21.5"
+              className="flex h-full w-full flex-col items-center gap-10 lg:gap-21.5"
             >
               <h2 className="font-montserrat text-2xl font-bold md:text-4xl lg:text-5xl lg:leading-[80px]">
                 {slider.title}
@@ -139,7 +139,7 @@ export const Works = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="flex items-center justify-center gap-4 pt-15">
+        <div className="flex items-center justify-center gap-4 pt-5 md:pt-10 lg:pt-15">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}

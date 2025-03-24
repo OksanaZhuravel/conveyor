@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export const Technology = () => {
   return (
-    <section className="m-auto mt-10 flex max-w-[1780px] flex-col-reverse items-start gap-5 px-5 md:mt-20 md:flex-row md:gap-15 md:px-0 xl:mt-30">
+    <section className="m-auto mt-10 flex max-w-[1780px] flex-col-reverse items-start gap-5 px-5 md:mt-20 md:flex-row md:gap-15 md:px-0 lg:px-0 xl:mt-30">
       <div className="relative px-5 lg:pb-18.25 lg:pl-41">
         <Image
           src="/technology.png"

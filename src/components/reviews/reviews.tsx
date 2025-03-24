@@ -1,5 +1,5 @@
 import { ReviewsList } from '@/components/reviews/reviews-list';
-import { ReviewsVideoList } from '@/components/reviews/reviews-video-list';
+
 import { Title } from '@/components/ui/title';
 import { IDs } from '@/constants';
 
@@ -7,7 +7,7 @@ export const Reviews = () => {
   return (
     <section
       id={IDs.REVIEWS}
-      className="m-auto w-full max-w-[1780px] pt-10 md:pt-20 xl:pt-30"
+      className="m-auto w-full max-w-[1780px] px-5 pt-10 md:pt-20 lg:px-0 xl:pt-30"
     >
       <div className="flex flex-col items-center pb-5 md:pb-15">
         <Title title="Отзывы клиентов" />
@@ -16,9 +16,9 @@ export const Reviews = () => {
           более 2-х лет
         </p>
       </div>
-      <div className="flex h-full min-h-max flex-col items-start justify-center gap-10 px-1 pt-5 md:px-0">
+
+      <div className="flex h-full flex-col items-start justify-center gap-5 px-1 pt-5 md:px-0 lg:gap-10">
         <ReviewsList />
-        <ReviewsVideoList />
       </div>
     </section>
   );

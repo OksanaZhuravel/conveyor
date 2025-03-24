@@ -16,7 +16,7 @@ export const Presentation = () => {
           alt="Видео"
           width={72}
           height={72}
-          className="absolute right-15 bottom-0 hidden md:block lg:h-18 lg:w-18"
+          className="absolute right-12 bottom-0 hidden lg:block lg:h-18 lg:w-18"
         />
       </div>
       <div className="relative h-full max-h-[540px] w-full max-w-[1180px]">

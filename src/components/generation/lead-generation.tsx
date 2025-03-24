@@ -11,7 +11,7 @@ export const LeadGeneration = () => {
     setIsExpanded(!isExpanded);
   };
   return (
-    <section className="m-auto mt-10 flex max-w-[1780px] flex-col items-center justify-start gap-5 md:mt-20 md:flex-row md:gap-10 lg:gap-15 xl:mt-30">
+    <section className="m-auto mt-10 flex max-w-[1780px] flex-col items-center justify-start gap-5 md:mt-20 md:gap-10 lg:flex-row lg:gap-15 xl:mt-30">
       <div className="flex h-full w-full max-w-[762px] flex-col items-start p-5 md:p-10 xl:pl-37">
         <h2 className="font-montserrat max-w-[560px] text-3xl font-bold md:text-4xl lg:text-5xl lg:leading-[80px]">
           <span className="text-accent text-3xl font-bold md:text-4xl lg:text-5xl lg:leading-[80px]">
@@ -28,7 +28,7 @@ export const LeadGeneration = () => {
         />
         <Button className="uppercase">Купить Лиды</Button>
       </div>
-      <div className="relative flex max-w-[730px] flex-col items-start gap-5 p-5 md:p-0">
+      <div className="relative flex w-full max-w-[730px] flex-col items-start gap-5 p-5 md:p-0">
         <p className="text-lg font-normal md:text-2xl">
           Использование лидогенерации снижает стоимость привлечения клиентов,
           позволяет бизнесу сосредоточиться на основном продукте и значительно
@@ -79,7 +79,7 @@ export const LeadGeneration = () => {
         >
           {isExpanded ? 'Скрыть' : 'Читать больше'}
         </Button>
-        <StarIcon className="absolute top-2 -right-19 hidden h-14.25 w-14.25 lg:block" />
+        <StarIcon className="absolute top-2 right-10 hidden h-14.25 w-14.25 lg:block" />
       </div>
     </section>
   );

@@ -17,7 +17,7 @@ const orders = [
 ];
 export const OrdersList = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-5 px-2 md:justify-between md:px-0">
+    <div className="flex flex-wrap justify-center gap-5 px-2 md:px-0">
       {orders.map((order, index) => (
         <article
           key={index}

@@ -9,15 +9,15 @@ import Image from 'next/image';
 
 export const Answers = () => {
   return (
-    <section className="m-auto w-full max-w-[1780px] pt-10 md:pt-20 xl:pt-30">
+    <section className="m-auto w-full max-w-[1780px] px-5 pt-10 md:pt-20 lg:px-0 xl:pt-30">
       <div className="flex flex-col items-center pb-5 md:pb-15">
         <Title title="Вопросы и ответы" />
       </div>
-      <div className="flex flex-col items-start justify-center gap-5 md:flex-row md:justify-between">
+      <div className="flex flex-col items-center justify-center gap-5 md:justify-between lg:flex-row">
         <Accordion
           type="single"
           collapsible
-          className="flex w-full flex-col gap-5 md:w-1/2"
+          className="flex w-full flex-col gap-5 lg:w-1/2"
         >
           <AccordionItem value="item-1">
             <AccordionTrigger>

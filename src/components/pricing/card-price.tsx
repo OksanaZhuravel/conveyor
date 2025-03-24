@@ -26,7 +26,7 @@ export const CardPrice = ({
   return (
     <article
       className={cn(
-        'rounded-30 flex h-full min-h-[813px] flex-col gap-7.5 p-10 hover:shadow-lg 2xl:w-[580px]',
+        'rounded-30 flex h-full w-full max-w-[465px] flex-col gap-7.5 p-10 hover:shadow-lg md:min-h-[813px] 2xl:max-w-[580px]',
         cardClass
       )}
     >
