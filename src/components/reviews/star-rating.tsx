@@ -13,7 +13,7 @@ const StarRating = ({ rating }: { rating: number }) => {
           alt="Полная звезда"
           width={49}
           height={49}
-          className="fill-gradient"
+          className="fill-gradient h-7 w-7 md:h-12.25 md:w-12.25"
         />
       ))}
     </div>

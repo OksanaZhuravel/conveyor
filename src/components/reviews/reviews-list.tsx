@@ -29,17 +29,17 @@ export const ReviewsList = () => {
       {reviews.map((review, index) => (
         <article
           key={index}
-          className="rounded-30 bg-muted flex h-full min-h-[680px] w-full max-w-[430px] flex-grow flex-col gap-5 p-10"
+          className="rounded-30 bg-muted flex h-full w-full max-w-[430px] flex-grow flex-col gap-5 p-5 md:p-10 lg:min-h-[680px]"
         >
           <div className="flex items-start justify-between">
-            <p className="font-montserrat text-4xl font-bold">
+            <p className="font-montserrat text-2xl font-bold lg:text-4xl">
               {review.rating.toFixed(1)}
             </p>
             <StarRating rating={review.rating} />
           </div>
           <div className="flex flex-col gap-5">
-            <p className="text-2xl">{review.text}</p>
-            <p className="text-muted-foreground text-2xl">{review.niche}</p>
+            <p className="lg:text-2xl">{review.text}</p>
+            <p className="text-muted-foreground lg:text-2xl">{review.niche}</p>
           </div>
         </article>
       ))}

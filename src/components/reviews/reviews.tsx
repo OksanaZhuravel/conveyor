@@ -16,7 +16,7 @@ export const Reviews = () => {
           более 2-х лет
         </p>
       </div>
-      <div className="flex h-full min-h-max flex-col items-start justify-center gap-10 pt-5">
+      <div className="flex h-full min-h-max flex-col items-start justify-center gap-10 px-1 pt-5 md:px-0">
         <ReviewsList />
         <ReviewsVideoList />
       </div>
