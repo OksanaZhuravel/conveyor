@@ -2,10 +2,10 @@ import { Client } from '@/components/client-page/client';
 import { MainTabs } from '@/components/content-tabs/main-tabs';
 import { Pricing } from '@/components/pricing/pricing';
 import { PromoMain } from '@/components/promo/promo-main';
-// import { PromoSection } from '@/components/promo/promo-section';
+import { PromoSection } from '@/components/promo/promo-section';
 import { Reviews } from '@/components/reviews/reviews';
 // import { Presentation } from '@/components/technology/presentation';
-// import { Technology } from '@/components/technology/technology';
+import { Technology } from '@/components/technology/technology';
 // import { Works } from '@/components/works/works';
 // import { LeadGeneration } from '@/components/generation/lead-generation';
 // import { Orders } from '@/components/orders/orders';
@@ -21,21 +21,21 @@ export default function Home() {
         <Pricing />
         <Client />
         <Reviews />
-        {/* <Technology /> */}
-        {/* <PromoSection
+        <Technology />
+        <PromoSection
           title="Зарегистрируйтесь и добавьте свой проект в систему — начните получать
           Лидов сегодня!"
           src="/promo_2.png"
-        /> */}
+        />
         {/* <Works /> */}
         {/* <Presentation /> */}
         {/* <Orders /> */}
-        {/* <PromoSection
-          className="flex-row-reverse"
+        <PromoSection
+          className="md:flex-row-reverse"
           title="Давайте принесём результат Вашему бизнесу? Завалите своей отдел продаж Лидами!"
           src="/promo_3.png"
           isReverse
-        /> */}
+        />
         {/* <Answers /> */}
         {/* <LeadGeneration /> */}
         {/* <Contacts /> */}

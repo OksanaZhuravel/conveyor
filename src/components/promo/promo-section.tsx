@@ -17,13 +17,13 @@ export const PromoSection = ({
   return (
     <section
       className={cn(
-        'bg-foreground rounded-30 m-auto mt-30 flex max-w-[1780px] items-center justify-between gap-24 px-30 py-15',
+        'bg-foreground rounded-30 m-auto mt-10 flex max-w-[1780px] flex-col items-center justify-between gap-10 px-10 py-10 md:mt-20 md:flex-row md:gap-24 md:px-30 md:py-15 xl:mt-30',
         className
       )}
       {...rest}
     >
       <div className="flex h-full w-full max-w-[762px] flex-col items-start gap-10">
-        <h2 className="font-montserrat text-background text-5xl/[52px] font-bold">
+        <h2 className="font-montserrat text-background text-2xl font-bold md:text-4xl lg:text-5xl lg:leading-[52px]">
           {title}
         </h2>
 

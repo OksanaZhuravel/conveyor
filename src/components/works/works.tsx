@@ -106,7 +106,7 @@ export const Works = () => {
               key={slider.id}
               className="flex w-full flex-col items-center gap-21.5"
             >
-              <h2 className="font-montserrat text-5xl/[52px] font-bold">
+              <h2 className="font-montserrat text-3xl leading-[80px] font-bold md:text-4xl lg:text-5xl">
                 {slider.title}
               </h2>
               <div className="flex w-full items-start justify-between gap-22.5">
@@ -122,7 +122,7 @@ export const Works = () => {
                       height={72}
                     />
                   </div>
-                  <h3 className="font-montserrat text-5xl/[52px] font-bold">
+                  <h3 className="font-montserrat text-3xl leading-[80px] font-bold md:text-4xl lg:text-5xl">
                     {slider.description}
                   </h3>
                 </div>

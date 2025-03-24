@@ -5,9 +5,9 @@ export const Presentation = () => {
   return (
     <section className="m-auto mt-30 flex max-w-[1180px] flex-col items-center gap-10">
       <div className="relative">
-        <h2 className="font-montserrat text-center text-5xl/[52px] font-bold">
+        <h2 className="font-montserrat text-center text-3xl leading-[80px] font-bold">
           Мы подготовили для вас видео&nbsp;-&nbsp;презентацию{' '}
-          <span className="text-accent font-montserrat text-5xl/[52px] font-bold">
+          <span className="text-accent font-montserrat font-bold md:text-4xl lg:text-5xl">
             нашей работы
           </span>
         </h2>

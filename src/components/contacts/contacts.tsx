@@ -9,7 +9,9 @@ export const Contacts = () => {
       className="bg-muted rounded-30 m-auto my-30 flex h-full max-w-[1780px] items-center justify-start gap-15"
     >
       <div className="flex h-full w-full max-w-1/2 flex-col items-center pt-20 pb-20 pl-20">
-        <h2 className="font-montserrat text-5xl/[52px] font-bold">Контакты</h2>
+        <h2 className="font-montserrat text-3xl leading-[80px] font-bold md:text-4xl lg:text-5xl">
+          Контакты
+        </h2>
         <p className="lg:text-32 text-muted-foreground max-w-[760px] py-5 text-center">
           Есть вопрос, или вы хотите получить бесплатную консультацию? Свяжитесь
           с нами, и мы предоставим необходимую информацию!

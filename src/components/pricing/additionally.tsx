@@ -13,10 +13,10 @@ export const Additionally = () => {
               <p className="font-montserrat max-w-[336px] text-2xl font-bold lg:text-4xl">
                 Создание промо-страницы
               </p>
-              <p className="font-montserrat text-2xl">
+              <p className="font-montserrat text-xl md:text-2xl">
                 от
                 <span
-                  className="font-montserrat ml-3.5 bg-clip-text text-2xl font-bold text-transparent lg:text-4xl"
+                  className="font-montserrat ml-3.5 bg-clip-text text-xl font-bold text-transparent md:text-2xl lg:text-4xl"
                   style={{
                     backgroundImage:
                       'linear-gradient(90deg, #FF6600 0%, #F26659 27%, #F06177 37%, #E55D97 48%, #CA46D2 71%, #8D13F9 100%)',
@@ -37,10 +37,10 @@ export const Additionally = () => {
               <p className="font-montserrat max-w-[556px] text-2xl font-bold lg:text-4xl">
                 Настройка и ведение Яндекс.Директ
               </p>
-              <p className="font-montserrat text-2xl">
+              <p className="font-montserrat text-xl md:text-2xl">
                 от
                 <span
-                  className="font-montserrat ml-3.5 bg-clip-text text-2xl font-bold text-transparent lg:text-4xl"
+                  className="font-montserrat ml-3.5 bg-clip-text text-xl font-bold text-transparent md:text-2xl lg:text-4xl"
                   style={{
                     backgroundImage:
                       'linear-gradient(90deg, #FF6600 0%, #F26659 27%, #F06177 37%, #E55D97 48%, #CA46D2 71%, #8D13F9 100%)',

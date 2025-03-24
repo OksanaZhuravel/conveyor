@@ -37,16 +37,16 @@ export const CardPrice = ({
         <Image src={starIcon} alt="Звезда" width={56} height={56} />
       </div>
       <div className="flex flex-col gap-5">
-        <h2 className="font-montserrat mb-2 max-w-[424px] text-2xl font-bold lg:text-4xl">
+        <h2 className="font-montserrat mb-2 max-w-[424px] text-xl font-bold md:text-2xl lg:text-4xl">
           {header}&nbsp;
           <span
-            className="font-montserrat bg-clip-text text-2xl font-bold text-transparent lg:text-4xl"
+            className="font-montserrat bg-clip-text text-xl font-bold text-transparent md:text-2xl lg:text-4xl"
             style={{
               backgroundImage:
                 'linear-gradient(90deg, #FF6600 0%, #F26659 27%, #F06177 37%, #E55D97 48%, #CA46D2 71%, #8D13F9 100%)',
             }}
           >
-            {price}
+            {price}&nbsp;₽
           </span>
         </h2>
         <p className="max-w-[424px] text-2xl">{description}</p>
