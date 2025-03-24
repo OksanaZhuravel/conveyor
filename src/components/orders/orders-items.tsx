@@ -41,11 +41,11 @@ export const OrdersItems = () => {
       {orders.map((order) => (
         <article
           key={order.id}
-          className="rounded-30 bg-muted flex h-full min-h-[455px] w-full max-w-[340px] flex-col justify-start gap-5 p-7.5 shadow-lg"
+          className="rounded-30 bg-muted flex h-full w-full max-w-[340px] flex-col justify-start gap-5 p-7.5 shadow-lg md:min-h-[455px]"
         >
           <Image src={order.srs} alt={order.title} width={50} height={50} />
-          <p className="text-muted-foreground flex flex-col text-2xl font-normal">
-            <span className="text-2xl font-bold">{order.title}</span>
+          <p className="text-muted-foreground flex flex-col text-xl font-normal md:text-2xl">
+            <span className="text-xl font-bold md:text-2xl">{order.title}</span>
             {order.description}
           </p>
         </article>

@@ -13,11 +13,11 @@ export const Answers = () => {
       <div className="flex flex-col items-center pb-5 md:pb-15">
         <Title title="Вопросы и ответы" />
       </div>
-      <div className="flex items-start justify-between">
+      <div className="flex flex-col items-start justify-center gap-5 md:flex-row md:justify-between">
         <Accordion
           type="single"
           collapsible
-          className="flex w-1/2 flex-col gap-5"
+          className="flex w-full flex-col gap-5 md:w-1/2"
         >
           <AccordionItem value="item-1">
             <AccordionTrigger>
@@ -25,18 +25,18 @@ export const Answers = () => {
               сайту?
             </AccordionTrigger>
             <AccordionContent>
-              <p className="mt-2 text-2xl">
+              <p className="mt-2 text-lg md:text-2xl">
                 Происходит обработка обезличенных данных (cookies). Cookies -
                 маленький фрагмент данных, который сохраняется в браузере и
                 передается при обращению к сайтам.
               </p>
-              <p className="mt-2 text-2xl">
+              <p className="mt-2 text-lg md:md:text-2xl">
                 Вы можете разместить в политике конфиденциальности условия с
                 согласием на передачу и обработку cookies посетителями вашего
                 сайта. Таким образом, это гарантирует полную легальность работы
                 с данными.
               </p>
-              <p className="text-2xl">
+              <p className="text-lg md:md:text-2xl">
                 Для сайта это не может навредить, и санкций со стороны поисковых
                 системы (Яндекс, Google) нет.
               </p>
@@ -47,7 +47,7 @@ export const Answers = () => {
               Откуда берутся номера телефонов?
             </AccordionTrigger>
             <AccordionContent>
-              <p className="text-2xl">
+              <p className="text-lg md:md:text-2xl">
                 Происходит обработка обезличенных данных (cookies). Cookies -
                 маленький фрагмент данных, который сохраняется в браузере и
                 передается при обращению к сайтам.
@@ -59,7 +59,7 @@ export const Answers = () => {
               Смогу ли я сам установить код на сайт?
             </AccordionTrigger>
             <AccordionContent>
-              <p className="text-2xl">
+              <p className="text-lg md:md:text-2xl">
                 Происходит обработка обезличенных данных (cookies). Cookies -
                 маленький фрагмент данных, который сохраняется в браузере и
                 передается при обращению к сайтам.
@@ -71,7 +71,7 @@ export const Answers = () => {
               На какую CMS или конструктор можно установить код «Лид Конвейер»?
             </AccordionTrigger>
             <AccordionContent>
-              <p className="text-2xl">
+              <p className="text-lg md:md:text-2xl">
                 Происходит обработка обезличенных данных (cookies). Cookies -
                 маленький фрагмент данных, который сохраняется в браузере и
                 передается при обращению к сайтам.
@@ -81,7 +81,7 @@ export const Answers = () => {
           <AccordionItem value="item-5">
             <AccordionTrigger>Как оплатить ваш сервис?</AccordionTrigger>
             <AccordionContent>
-              <p className="text-2xl">
+              <p className="text-lg md:md:text-2xl">
                 Оплата производится на сайте через платежный сервис
               </p>
             </AccordionContent>
@@ -92,7 +92,7 @@ export const Answers = () => {
           alt="Девушка с ноутбуком"
           width={879}
           height={581}
-          className="w-1/2 max-w-[879px]"
+          className="w-full max-w-[879px] md:w-1/2"
         />
       </div>
     </section>

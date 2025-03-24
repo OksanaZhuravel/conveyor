@@ -17,7 +17,7 @@ const orders = [
 ];
 export const OrdersList = () => {
   return (
-    <div className="flex flex-wrap gap-5">
+    <div className="flex flex-wrap justify-center gap-5 px-2 md:justify-between md:px-0">
       {orders.map((order, index) => (
         <article
           key={index}
@@ -34,7 +34,7 @@ export const OrdersList = () => {
               height={60}
             />
           </div>
-          <p className="text-2xl">{order.title}</p>
+          <p className="text-xl md:text-2xl">{order.title}</p>
         </article>
       ))}
     </div>
