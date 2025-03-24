@@ -35,7 +35,7 @@ export const Additionally = () => {
           <div className="flex items-start justify-between">
             <div className="flex flex-col gap-5">
               <p className="font-montserrat max-w-[556px] text-2xl font-bold lg:text-4xl">
-                Настройка и ведение Яндекс.Директ
+                Настройка и ведение Яндекс.Директ
               </p>
               <p className="font-montserrat text-2xl">
                 от

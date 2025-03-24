@@ -9,11 +9,11 @@ export const Reviews = () => {
       id={IDs.REVIEWS}
       className="m-auto w-full max-w-[1780px] pt-10 md:pt-20 xl:pt-30"
     >
-      <div className="flex flex-col items-center pb-15">
+      <div className="flex flex-col items-center pb-5 md:pb-15">
         <Title title="Отзывы клиентов" />
         <p className="lg:text-32 text-muted-foreground max-w-[791px] text-center">
-          Более 89% наших клиентов сотрудничают с нами ежемесячно на протяжении
-          более 2-х лет
+          Более 89% наших клиентов сотрудничают с нами ежемесячно на протяжении
+          более 2-х лет
         </p>
       </div>
       <div className="flex h-full min-h-max flex-col items-start justify-center gap-10 pt-5">

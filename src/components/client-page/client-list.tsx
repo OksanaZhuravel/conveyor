@@ -9,11 +9,11 @@ const clientLogos = [
 
 export const ClientList = () => {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-wrap items-center justify-center gap-4">
       {clientLogos.map((logo, index) => (
         <div
           key={index}
-          className="bg-muted rounded-30 flex h-[200px] w-[430px] items-center justify-center shadow-lg"
+          className="bg-muted rounded-30 flex h-38 w-75 items-center justify-center shadow-lg md:h-50 md:w-110"
         >
           <Image
             src={logo.src}

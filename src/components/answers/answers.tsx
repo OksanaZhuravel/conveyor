@@ -10,8 +10,8 @@ import Image from 'next/image';
 export const Answers = () => {
   return (
     <section className="m-auto w-full max-w-[1780px] pt-10 md:pt-20 xl:pt-30">
-      <div className="flex flex-col items-center pb-15">
-        <Title title="Вопросы и ответы" />
+      <div className="flex flex-col items-center pb-5 md:pb-15">
+        <Title title="Вопросы и ответы" />
       </div>
       <div className="flex items-start justify-between">
         <Accordion
@@ -21,7 +21,7 @@ export const Answers = () => {
         >
           <AccordionItem value="item-1">
             <AccordionTrigger>
-              На сколько это безопасно, законно и может ли навредить моему
+              На сколько это безопасно, законно и может ли навредить моему
               сайту?
             </AccordionTrigger>
             <AccordionContent>
@@ -56,7 +56,7 @@ export const Answers = () => {
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger>
-              Смогу ли я сам установить код на сайт?
+              Смогу ли я сам установить код на сайт?
             </AccordionTrigger>
             <AccordionContent>
               <p className="text-2xl">
@@ -68,7 +68,7 @@ export const Answers = () => {
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger>
-              На какую CMS или конструктор можно установить код «Лид Конвейер»?
+              На какую CMS или конструктор можно установить код «Лид Конвейер»?
             </AccordionTrigger>
             <AccordionContent>
               <p className="text-2xl">
@@ -79,7 +79,7 @@ export const Answers = () => {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
-            <AccordionTrigger>Как оплатить ваш сервис?</AccordionTrigger>
+            <AccordionTrigger>Как оплатить ваш сервис?</AccordionTrigger>
             <AccordionContent>
               <p className="text-2xl">
                 Оплата производится на сайте через платежный сервис

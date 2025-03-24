@@ -11,13 +11,13 @@ export const Contacts = () => {
       <div className="flex h-full w-full max-w-1/2 flex-col items-center pt-20 pb-20 pl-20">
         <h2 className="font-montserrat text-5xl/[52px] font-bold">Контакты</h2>
         <p className="lg:text-32 text-muted-foreground max-w-[760px] py-5 text-center">
-          Есть вопрос, или вы хотите получить бесплатную консультацию? Свяжитесь
-          с нами, и мы предоставим необходимую информацию!
+          Есть вопрос, или вы хотите получить бесплатную консультацию? Свяжитесь
+          с нами, и мы предоставим необходимую информацию!
         </p>
         <div className="flex w-full flex-col items-start gap-7.5 pt-10">
           <address className="not-italic">
             <p className="lg:text-32 text-muted-foreground">Адрес офиса</p>
-            <p className="lg:text-32">г. Москва, ул. Дубининская, д. 53</p>
+            <p className="lg:text-32">г. Москва, ул. Дубининская, д. 53</p>
           </address>
           <div>
             <p className="lg:text-32 text-muted-foreground">Телефон:</p>
@@ -25,7 +25,7 @@ export const Contacts = () => {
               href={Paths.TELEPHONE}
               className="lg:text-32 hover:text-accent transition-[color,box-shadow]"
             >
-              +7 495 118-32-82
+              +7 495 118-32-82
             </Link>
           </div>
           <div>
@@ -41,7 +41,7 @@ export const Contacts = () => {
           </div>
           <div className="flex items-center gap-3">
             <p className="lg:text-32 text-muted-foreground max-w-[489px]">
-              Или напишите нам в любимом мессенджере:
+              Или напишите нам в любимом мессенджере:
             </p>
             <Link
               href={Paths.TELEGRAM}
