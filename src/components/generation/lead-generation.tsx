@@ -11,7 +11,7 @@ export const LeadGeneration = () => {
     setIsExpanded(!isExpanded);
   };
   return (
-    <section className="m-auto mt-30 flex max-w-[1780px] items-center justify-start gap-15">
+    <section className="m-auto mt-10 flex max-w-[1780px] items-center justify-start gap-15 md:mt-20 xl:mt-30">
       <div className="flex h-full w-full max-w-[762px] flex-col items-start pl-37">
         <h2 className="font-montserrat max-w-[560px] text-3xl leading-[80px] font-bold md:text-4xl lg:text-5xl">
           <span className="leading-[80px]text-accent text-3xl font-bold md:text-4xl lg:text-5xl">

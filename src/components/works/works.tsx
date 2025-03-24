@@ -6,7 +6,7 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel';
 import { IDs } from '@/constants';
-import Autoplay from 'embla-carousel-autoplay';
+// import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
 import { DotButton } from './dot-button';
@@ -93,10 +93,10 @@ export const Works = () => {
   return (
     <section
       id={IDs.WORKS}
-      className="rounded-30 bg-muted m-auto mt-30 max-w-[1780px] px-37.5 py-20"
+      className="rounded-30 bg-muted m-auto mt-10 max-w-[1780px] px-10 py-10 md:mt-20 xl:mt-30 xl:px-37.5 xl:py-20"
     >
       <Carousel
-        plugins={[Autoplay({ playOnInit: true, delay: 10000 })]}
+        // plugins={[Autoplay({ playOnInit: true, delay: 10000 })]}
         opts={{ loop: true }}
         setApi={setApi}
       >
@@ -104,12 +104,12 @@ export const Works = () => {
           {sliders.map((slider) => (
             <CarouselItem
               key={slider.id}
-              className="flex w-full flex-col items-center gap-21.5"
+              className="flex w-full flex-col items-center gap-10 lg:gap-21.5"
             >
-              <h2 className="font-montserrat text-3xl leading-[80px] font-bold md:text-4xl lg:text-5xl">
+              <h2 className="font-montserrat text-2xl font-bold md:text-4xl lg:text-5xl lg:leading-[80px]">
                 {slider.title}
               </h2>
-              <div className="flex w-full items-start justify-between gap-22.5">
+              <div className="flex w-full flex-col items-start justify-between gap-10 md:flex-row lg:gap-22.5">
                 <div className="flex w-full max-w-[659px] flex-col gap-7.5">
                   <div className="flex items-center justify-start gap-10">
                     <span className="font-montserrat text-3xl leading-[80px] font-bold md:text-4xl lg:text-5xl xl:text-[80px]">
@@ -120,16 +120,17 @@ export const Works = () => {
                       alt={slider.description}
                       width={72}
                       height={72}
+                      className="h-10 w-10 lg:h-18 lg:w-18"
                     />
                   </div>
-                  <h3 className="font-montserrat text-3xl leading-[80px] font-bold md:text-4xl lg:text-5xl">
+                  <h3 className="font-montserrat text-xl font-bold md:text-4xl lg:text-5xl lg:leading-[80px]">
                     {slider.description}
                   </h3>
                 </div>
 
                 <ul className="flex w-full max-w-[730px] flex-col gap-5">
                   {slider.steps.map((step, stepIndex) => (
-                    <li key={stepIndex} className="text-2xl">
+                    <li key={stepIndex} className="text-xl md:text-2xl">
                       {step}
                     </li>
                   ))}

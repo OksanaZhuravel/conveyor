@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const Presentation = () => {
   return (
-    <section className="m-auto mt-30 flex max-w-[1180px] flex-col items-center gap-10">
+    <section className="m-auto mt-10 flex max-w-[1180px] flex-col items-center gap-10 md:mt-20 xl:mt-30">
       <div className="relative">
         <h2 className="font-montserrat text-center text-3xl leading-[80px] font-bold">
           Мы подготовили для вас видео&nbsp;-&nbsp;презентацию{' '}

@@ -6,7 +6,7 @@ import { PromoSection } from '@/components/promo/promo-section';
 import { Reviews } from '@/components/reviews/reviews';
 // import { Presentation } from '@/components/technology/presentation';
 import { Technology } from '@/components/technology/technology';
-// import { Works } from '@/components/works/works';
+import { Works } from '@/components/works/works';
 // import { LeadGeneration } from '@/components/generation/lead-generation';
 // import { Orders } from '@/components/orders/orders';
 // import { Answers } from '@/components/answers/answers';
@@ -27,7 +27,7 @@ export default function Home() {
           Лидов сегодня!"
           src="/promo_2.png"
         />
-        {/* <Works /> */}
+        <Works />
         {/* <Presentation /> */}
         {/* <Orders /> */}
         <PromoSection
