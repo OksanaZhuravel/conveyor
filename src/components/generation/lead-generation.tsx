@@ -79,7 +79,7 @@ export const LeadGeneration = () => {
         >
           {isExpanded ? 'Скрыть' : 'Читать больше'}
         </Button>
-        <StarIcon className="absolute top-2 -right-19 h-14.25 w-14.25" />
+        <StarIcon className="absolute top-2 -right-19 hidden h-14.25 w-14.25 lg:block" />
       </div>
     </section>
   );
