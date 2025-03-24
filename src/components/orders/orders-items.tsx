@@ -37,11 +37,11 @@ const orders = [
 ];
 export const OrdersItems = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-5 pt-5">
+    <div className="flex flex-wrap items-center justify-center gap-5 px-2 pt-5 md:px-0">
       {orders.map((order) => (
         <article
           key={order.id}
-          className="rounded-30 bg-muted flex h-full w-full max-w-[340px] flex-col justify-start gap-5 p-7.5 shadow-lg md:min-h-[455px]"
+          className="rounded-30 bg-muted flex h-full w-full flex-col justify-start gap-5 p-7.5 shadow-lg md:min-h-[455px] md:max-w-[340px]"
         >
           <Image src={order.srs} alt={order.title} width={50} height={50} />
           <p className="text-muted-foreground flex flex-col text-xl font-normal md:text-2xl">
